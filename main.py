@@ -9,7 +9,7 @@ if __name__ == "__main__":
     jeans1 = Clothing("Jeans 1", "Blue jeans", "Closet", "Blue", "L", ClothingType.JEANS)
     jacket1 = Clothing("Jacket 1", "Winter jacket", "Coat rack", "Black", "L", ClothingType.JACKET)
 
-    shirt2.change("Bad whether")
+    shirt2.add_new_param("Bad whether")
 
     wardrobe.add_clothing(shirt1)
     wardrobe.add_clothing(shirt2)
