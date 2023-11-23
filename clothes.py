@@ -21,7 +21,7 @@ class Clothing:
         return (f"{self.name} ({self.clothing_type.name}), Description: {self.description}, Location: {self.location}, "
                 f" Color: {self.color}, Size: {self.size}, Clothing type: {self.clothing_type}")
 
-    def change(self, text):
+    def add_new_param(self, text):
         self.param = text
 
 
@@ -37,5 +37,5 @@ class Wardrobe:
 
     def are_going_out(self):
         clothing_types = set(clothing.clothing_type for clothing in self.clothing_list)
-        ready_to_go_out = len(clothing_types) > 3
-        return ready_to_go_out
+        is_ready_to_go_out = len(clothing_types) > 3
+        return is_ready_to_go_out
